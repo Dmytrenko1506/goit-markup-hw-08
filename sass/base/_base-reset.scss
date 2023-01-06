@@ -1,0 +1,59 @@
+body {
+    font-family:'Roboto', sans-serif;
+    background-color: $whiteColor;
+    color: $primeryTextColor;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: $titleTextColor;
+}
+// Placeholders
+%list {
+    list-style: none;
+    
+}
+%link {
+    text-decoration: none;
+    font-style: normal;
+}

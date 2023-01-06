@@ -1,0 +1,33 @@
+.section.portfolio {
+    padding-top: 0;
+}
+
+.portfolio {
+    &__title {
+            margin-bottom: 50px;
+        }
+}
+.portfolio-cards {
+    &__list {
+            display: flex;
+            justify-content: space-between;
+            @extend %list;
+        }
+    &__item {
+        position: relative;
+    }
+    &__label {
+        position: absolute;
+        width: 100%;
+        height: 70px;
+        padding: 27px 0;
+        bottom: 0%;
+    
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        text-transform: uppercase;
+        color: $whiteColor;
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+}

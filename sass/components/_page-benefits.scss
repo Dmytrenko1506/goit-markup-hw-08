@@ -1,0 +1,30 @@
+.benefits{
+    &__list{
+        @extend %list;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 270px;
+    }
+    &__icon {
+        width: 270px;
+        height: 120px;
+        background-color: $secondaryBgColor;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title {
+       
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        color: $titleTextColor;
+    }
+    &__text {
+        line-height: 1.71;
+    }
+}
