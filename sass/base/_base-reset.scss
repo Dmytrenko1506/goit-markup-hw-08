@@ -28,25 +28,77 @@ img {
     height: auto;
 }
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
+
+    @media (min-width : 320px) and (max-width: 479px) {
+        max-width: 320px;
+
+    }
+
+    @media (min-width : 480px) and (max-width: 767px) {
+        width: 480px;
+
+    }
+
+    @media (min-width : 768px) and (max-width: 1199px) {
+        width: 768px;
+
+    }
+
+    @media (min-width : 1200px) {
+        width: 1200px;
+
+    }
 }
 
+
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  @media ( min-width: 768px ) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+  }
+  
+@media (min-width : 320px) and (max-width: 479px) {
+    max-width: 320px;
+
+}
+
+@media (min-width : 480px) and (max-width: 767px) {
+    width: 480px;
+
+}
+
+@media (min-width : 768px) and (max-width: 1199px) {
+    width: 768px;
+
+}
+
+@media (min-width : 1200px) {
+    width: 1200px;
+
+}
 }
 .section-title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     color: $titleTextColor;
+
+    @media (min-width: 1200px) {
+        font-size: 36px;
+        
+    }
 }
 // Placeholders
 %list {

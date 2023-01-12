@@ -16,7 +16,9 @@
     <header class="header">
       <div class="container header__navigation">
         <nav class="header__navigation">
-          <a href="./index.html" class="logo link"><span class="logo__text">Web</span>Studio</a>
+          <a href="./index.html" class="logo header__logo"
+            ><span class="logo__text">Web</span>Studio</a
+          >
           <ul class="site-navigation site-navigation__list">
             <li class="site-navigation__item">
               <a href="./index.html" class="site-navigation__link site-navigation__link--current"
@@ -49,6 +51,11 @@
             >
           </li>
         </ul>
+        <button class="header__btn" type="button">
+          <svg class="header__icon-menu" width="40" height="40">
+            <use href="./images/icons/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -141,7 +148,12 @@
           <!-- Team-card -->
           <ul class="team__list list">
             <li class="team-card">
-              <img src="./images/team/card1.jpg" alt="Участник команды" width="270" />
+              <img
+                class="team-card__img"
+                src="./images/team/card1.jpg"
+                alt="Участник команды"
+                width="270"
+              />
               <div class="team-card__thumb">
                 <h3 class="team-card__title title">Ігор Дем'яненко</h3>
                 <p lang="en" class="team-card__text">Product Designer</p>
@@ -183,7 +195,12 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="./images/team/card2.jpg" alt="Участник команды" width="270" />
+              <img
+                class="team-card__img"
+                src="./images/team/card2.jpg"
+                alt="Участник команды"
+                width="270"
+              />
               <div class="team-card__thumb">
                 <h3 class="team-card__title title">Ольга Рєпіна</h3>
                 <p lang="en" class="team-card__text">Frontend Developer</p>
@@ -224,7 +241,12 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="./images/team/card3.jpg" alt="Участник команды" width="270" />
+              <img
+                class="team-card__img"
+                src="./images/team/card3.jpg"
+                alt="Участник команды"
+                width="270"
+              />
               <div class="team-card__thumb">
                 <h3 class="team-card__title title">Микола Тарасов</h3>
                 <p lang="en" class="team-card__text">Marketing</p>
@@ -265,7 +287,12 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="./images/team/card4.jpg" alt="Участник команды" width="270" />
+              <img
+                class="team-card__img"
+                src="./images/team/card4.jpg"
+                alt="Участник команды"
+                width="270"
+              />
               <div class="team-card__thumb">
                 <h3 class="team-card__title title">Михайло Єрмаков</h3>
                 <p lang="en" class="team-card__text">UI Designer</p>

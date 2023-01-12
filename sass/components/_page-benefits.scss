@@ -1,14 +1,28 @@
 .benefits{
     &__list{
         @extend %list;
-        display: flex;
-        justify-content: space-between;
+        
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
     }
     &__item {
-        width: 270px;
+        @media (min-width: 768px) {
+            width: 270px;
+        }
+    }
+    &__item + &__item {
+        @media ( max-width: 767px) {
+            margin-top: 30px;
+        }
+       
     }
     &__icon {
-        width: 270px;
+        @media (min-width: 768px) {
+                width: 270px;
+            }
+        
         height: 120px;
         background-color: $secondaryBgColor;
         margin-bottom: 30px;
@@ -17,12 +31,15 @@
         justify-content: center;
     }
     &__title {
-       
+        text-align: center;
         font-size: 14px;
         line-height: 1.14;
         text-transform: uppercase;
         margin-bottom: 10px;
         color: $titleTextColor;
+        @media (min-width: 768px) {
+            text-align: start;
+            }
     }
     &__text {
         line-height: 1.71;
