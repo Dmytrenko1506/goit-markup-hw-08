@@ -6,8 +6,10 @@
         position: relative;
     }
     &__list {
-        margin-left: 93px;
-        
+        margin-left: 87px;
+        @media ( min-width:1200px) {
+            margin-left: 93px;
+        }
     }
     &__item + &__item {
         margin-left: 50px;

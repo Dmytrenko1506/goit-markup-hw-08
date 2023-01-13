@@ -8,6 +8,10 @@
     @extend %list;
     
     display: flex;
+    @media (max-width:479px ) {
+            justify-content: center;
+        }
+
     @media (max-width:767px) {
         flex-wrap: wrap;
         // gap: 30px;

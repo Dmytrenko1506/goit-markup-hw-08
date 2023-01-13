@@ -4,7 +4,6 @@ body {
     color: $primeryTextColor;
     font-size: 14px;
     letter-spacing: 0.03em;
-
 }
 
 h1,
@@ -36,57 +35,34 @@ img {
   margin-right: auto;
 
     @media (min-width : 320px) and (max-width: 479px) {
-        max-width: 320px;
-
+        
+        width: 320px;
     }
 
     @media (min-width : 480px) and (max-width: 767px) {
         width: 480px;
-
     }
 
     @media (min-width : 768px) and (max-width: 1199px) {
         width: 768px;
-
     }
 
     @media (min-width : 1200px) {
         width: 1200px;
-
     }
 }
-
 
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
-  @media ( min-width: 768px ) {
+
+  @media ( min-width: 1200px ) {
     padding-top: 94px;
     padding-bottom: 94px;
-    
   }
   
-@media (min-width : 320px) and (max-width: 479px) {
-    max-width: 320px;
-
-}
-
-@media (min-width : 480px) and (max-width: 767px) {
-    width: 480px;
-
-}
-
-@media (min-width : 768px) and (max-width: 1199px) {
-    width: 768px;
-
-}
-
-@media (min-width : 1200px) {
-    width: 1200px;
-
-}
 }
 .section-title {
     font-weight: 700;
@@ -97,13 +73,11 @@ img {
 
     @media (min-width: 1200px) {
         font-size: 36px;
-        
     }
 }
 // Placeholders
 %list {
     list-style: none;
-    
 }
 %link {
     text-decoration: none;

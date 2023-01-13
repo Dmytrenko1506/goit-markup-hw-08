@@ -4,15 +4,21 @@
     display: flex;
     flex-wrap: wrap;
     
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     max-width: 326px;
-    &__item + &__item {
-        margin-left: 8px;
-    }
+
+    column-gap: 8px;
+    row-gap: 15px;
+    
     @media (min-width:768px) {
         justify-content: center;
         max-width: 100%;
+        margin-bottom: 30px;
+
     }
+   @media (min-width:1200px) {
+    margin-bottom: 50px;
+   }
 }
 .filter__btn {
     padding: 6px 22px;

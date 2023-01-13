@@ -1,15 +1,21 @@
 .benefits{
     &__list{
         @extend %list;
+        display: flex;
+        flex-wrap: wrap;
         
         @media (min-width: 768px) {
-            display: flex;
-            justify-content: space-between;
+            gap: 30px;
         }
     }
     &__item {
-        @media (min-width: 768px) {
-            width: 270px;
+        @media (min-width:768px) {
+            width: 100%;
+            max-width: 354px;
+        }
+        @media (min-width: 1200px) {
+            width: 100%;
+            max-width: 270px;
         }
     }
     &__item + &__item {
@@ -19,10 +25,6 @@
        
     }
     &__icon {
-        @media (min-width: 768px) {
-                width: 270px;
-            }
-        
         height: 120px;
         background-color: $secondaryBgColor;
         margin-bottom: 30px;
@@ -37,6 +39,7 @@
         text-transform: uppercase;
         margin-bottom: 10px;
         color: $titleTextColor;
+
         @media (min-width: 768px) {
             text-align: start;
             }
