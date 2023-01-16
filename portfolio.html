@@ -53,7 +53,7 @@
             >
           </li>
         </ul>
-        <button class="header__btn" type="button">
+        <button class="header__btn-menu js-open-menu" type="button">
           <svg class="header__icon-menu" width="40" height="40">
             <use href="./images/icons/symbol-defs.svg#icon-menu"></use>
           </svg>
@@ -374,5 +374,57 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu js-menu-container">
+      <div class="container container-box">
+        <button class="mobile-menu__close js-close-menu" type="button">
+          <svg width="19" height="19">
+            <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__list-nav">
+          <li class="mobile-menu__item">
+            <a href="./index.html" class="mobile-menu__link">Студія</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--current"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#address" class="mobile-menu__link">Контакти</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__list-contact">
+          <li class="mobile-menu__item">
+            <a
+              href="tel:+380961111111"
+              class="mobile-menu__contact-link mobile-menu__contact-link--current"
+            >
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a href="mailto:info@devstudio.com" class="mobile-menu__contact-link">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__social-list">
+          <li class="mobile-menu__social-item">
+            <a href="https://www.instagram.com" class="mobile-menu__social-link">Instagram</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a href="https://twitter.com" class="mobile-menu__social-link">Twitter</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a href="https://www.facebook.com" class="mobile-menu__social-link">Facebook</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a href="https://www.linkedin.com" class="mobile-menu__social-link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

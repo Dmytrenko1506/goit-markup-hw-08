@@ -71,16 +71,15 @@
     flex-direction: column;
 
     &__input-comment {
-            resize: none;
-            // width: 448px;
-            height: 120px;
-            padding: 12px 16px;
-            border: 1px solid rgba(33, 33, 33, 0.2);
-            border-radius: 4px;
-            outline: none;
-            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover, &:focus {
-        border-color: $accentColor;
+        resize: none;
+        height: 120px;
+        padding: 12px 16px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        outline: none;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover, &:focus {
+            border-color: $accentColor;
     }
         }
 }
@@ -117,7 +116,6 @@
 }
 .field-input {
     position: relative;
-    // width: 448px;
 }
 .form-field__icon {
     position: absolute;
@@ -131,7 +129,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // width: 448px;
     margin-bottom: 30px;
 
     &__link {
@@ -140,7 +137,11 @@
     &__lable {
         position: relative;
         font-size: 12px;
-        line-height: 1.71;
+        line-height: 1.17;
+        @media (min-width:1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
     }
     &__input {
         appearance: none;

@@ -1,0 +1,106 @@
+
+.container-box {
+    padding: 48px 40px;
+    position: relative;
+    
+}
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    height: 100%;
+    background-color: $whiteColor;
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &.is-open {
+            transform: translateX(0);
+        }
+    &__list-nav{
+       margin-bottom: auto;
+    }
+    
+    &__close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+            &:hover,
+            &:focus {
+                fill: $accentColor;
+            }
+    
+        }
+    &__link{
+        @extend %link;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+        color: $titleTextColor;
+        transition: color 250ms cubic-bezier(0.4,0,0.2,1);
+        
+        &:hover,
+        &:focus {
+                color: $accentColor;
+            }
+        
+    }
+    &__link--current {
+        color: $accentColor;
+    }
+    &__item {
+        @extend %list;
+        
+        &+& {
+                margin-top: 32px;
+            }
+    }
+    &__contact-link {
+        @extend %link;
+        color: inherit;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+    }
+    &__contact-link--current {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+        color: $accentColor;
+    }
+    &__social-list{
+        @extend %list;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 64px;
+        column-gap: 20px;
+        row-gap: 10px;
+    }
+    &__social-link {
+        @extend %link;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: $accentColor;
+    }
+}
+.overlay-mobile {
+        flex-direction: column;
+        display: flex;
+        
+}
+
+
+

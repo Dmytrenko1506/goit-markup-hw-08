@@ -52,14 +52,24 @@
 
 }
 .contact__icon-envelope {
-        width: 16px;
-        height: 12px;
+        width: 14px;
+        height: 10px;
         margin-right: 10px;
         fill: currentColor;
+
+        @media (min-width:1200px)  {
+            width: 16px;
+            height: 12px;
+        }
 }   
 .contact__icon-smartphone {
         width: 10px;
-        height: 16px;
+        height: 14px;
         margin-right: 10px;
         fill: currentColor;
+
+        @media (min-width:1200px) {
+            width: 10px;
+            height: 16px;
+            }
 }

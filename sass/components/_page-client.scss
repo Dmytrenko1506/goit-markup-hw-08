@@ -8,30 +8,11 @@
     @extend %list;
     
     display: flex;
-    @media (max-width:479px ) {
+    flex-wrap: wrap;
+        gap: 30px;
+    @media (max-width:479.5px ) {
             justify-content: center;
         }
-
-    @media (max-width:767px) {
-        flex-wrap: wrap;
-        // gap: 30px;
-        margin: -15px;
-       
-    }
-    
-    &__item + &__item {
-        @media (min-width: 1200px) {
-            margin-left: 30px;
-        }
-       
-    }
-       
-    &__item {
-        @media (max-width:767px) {
-                margin: 15px;
-            }
-        
-    }
        
     &__link {
         display: flex;
