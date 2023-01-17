@@ -15,11 +15,10 @@
     }
 }
 .project-card {
-    // НЕ ЗАБЫТЬ УБРАТЬ!!!!!!
         @media (min-width:768px) and (max-width:1199.5px) {
-            max-width: 354px;
-        }
-      
+              flex-basis: calc((100% - 30px) / 2);
+              
+          }
        
                 
       
