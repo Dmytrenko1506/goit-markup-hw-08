@@ -10,7 +10,7 @@
     position: relative;
     height: 100%;
     width: 100%;
-    max-width: 290px;
+    max-width: 300px;
     max-height: 609px;
     padding: 40px;
 
@@ -18,7 +18,10 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     overflow-y: auto;
-    
+    @media (max-width:767.5px) {
+        padding:40px 30px 15px ;
+        
+    }
     @media (min-width: 480px) {
         max-width: 450px;
         max-height: 609px;
@@ -138,6 +141,9 @@
         position: relative;
         font-size: 12px;
         line-height: 1.17;
+        @media (max-width:479.5px) {
+            padding-left: 20px;
+        }
         @media (min-width:1200px) {
             font-size: 14px;
             line-height: 1.71;
@@ -154,6 +160,12 @@
         border: 2px solid $titleTextColor;
         border-radius: 2px;
         fill: transparent;
+        @media (max-width:479.5px) {
+            top: 0;
+            left: 0;
+            transform: translateY(0);
+            
+        }
     }
     &__btn {
         margin-left: auto;
